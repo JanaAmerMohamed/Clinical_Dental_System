@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="addsource.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="alert.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="calender.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="chatbot.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="delete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="deletemessage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="dentalchartpage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Discountvoucher.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="doctormessage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Doctororder.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Doctorschedual.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="doctorview.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="edit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="editmessage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="filepage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="helpsupport.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ivrbooking.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="news.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ocr.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ontology.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="patientview.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="payment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="paymentdoctor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="paymentreceptiona.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="report.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="review.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ss.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page4.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page5.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page6.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page7.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="reception.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SecondPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="signmessage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="submitsignuppateint.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="submitsource.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="updaterecord.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="uploaddicom.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="upload_pdf.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Window2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="addsource.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="alert.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="calender.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="chatbot.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="delete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="deletemessage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="dentalchartpage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Discountvoucher.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="doctormessage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Doctororder.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Doctorschedual.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="doctorview.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="edit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="editmessage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="filepage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="helpsupport.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ivrbooking.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="news.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ocr.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ontology.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="patientview.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="payment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="paymentdoctor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="paymentreceptiona.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="report.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="review.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ss.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page3.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page4.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page5.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page6.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page7.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="reception.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SecondPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="signmessage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="submitsignuppateint.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="submitsource.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="updaterecord.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="uploaddicom.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="upload_pdf.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Window2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

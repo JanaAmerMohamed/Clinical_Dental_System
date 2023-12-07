@@ -1,0 +1,133 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="126-1269385_chatbots-builder-pricing-crozdesk-chat-bot-png-transparent.png" />
+    <None Remove="2055824.png" />
+    <None Remove="225482.png" />
+    <None Remove="5878299.png" />
+    <None Remove="a-removebg-preview.png" />
+    <None Remove="add.png" />
+    <None Remove="back.png" />
+    <None Remove="d1.png" />
+    <None Remove="dd.png" />
+    <None Remove="Doctor icon medical consultation male physician vector image on VectorStock.jpeg" />
+    <None Remove="doctor.jpg" />
+    <None Remove="Image1.png" />
+    <None Remove="kisspng-physician-hospital-dr-mary-c-kirk-md-doctor-of-the-doctor-5ac2fc7f8a1db3.7569835315227280635657.jpg" />
+    <None Remove="m-removebg-preview.png" />
+    <None Remove="MicrosoftTeams-image %281%29.png" />
+    <None Remove="MicrosoftTeams-image %2811%29.png" />
+    <None Remove="MicrosoftTeams-image %2812%29.png" />
+    <None Remove="MicrosoftTeams-image %2814%29.png" />
+    <None Remove="MicrosoftTeams-image %2815%29.png" />
+    <None Remove="MicrosoftTeams-image %2816%29.png" />
+    <None Remove="MicrosoftTeams-image %2817%29.png" />
+    <None Remove="MicrosoftTeams-image %2818%29.png" />
+    <None Remove="MicrosoftTeams-image %2819%29.png" />
+    <None Remove="MicrosoftTeams-image %282%29.png" />
+    <None Remove="MicrosoftTeams-image %2821%29.png" />
+    <None Remove="MicrosoftTeams-image %2822%29.png" />
+    <None Remove="MicrosoftTeams-image %2823%29.png" />
+    <None Remove="MicrosoftTeams-image %2824%29.png" />
+    <None Remove="MicrosoftTeams-image %283%29.png" />
+    <None Remove="MicrosoftTeams-image %284%29.png" />
+    <None Remove="MicrosoftTeams-image %285%29.png" />
+    <None Remove="MicrosoftTeams-image %286%29.png" />
+    <None Remove="MicrosoftTeams-image %287%29.png" />
+    <None Remove="MicrosoftTeams-image %288%29.png" />
+    <None Remove="MicrosoftTeams-image %289%29.png" />
+    <None Remove="MicrosoftTeams-image.png" />
+    <None Remove="New Project 368 [22E05E0].png" />
+    <None Remove="o-removebg-preview %281%29.png" />
+    <None Remove="o-removebg-preview %282%29.png" />
+    <None Remove="o-removebg-preview.png" />
+    <None Remove="OIG.jpeg" />
+    <None Remove="p-removebg-preview.png" />
+    <None Remove="password.png" />
+    <None Remove="r-removebg-preview.png" />
+    <None Remove="r.jpg" />
+    <None Remove="signs-icon-warning-icon-security-icon-set-icon-error-icon-text-triangle-line-symbol-signage-logo-png-clipart.jpg" />
+    <None Remove="submit-successfully.png" />
+    <None Remove="WhatsApp Image 2023-11-10 at 01.01.49_90f173e9.jpg" />
+    <None Remove="WhatsApp Image 2023-11-10 at 09.14.19_0cc5122c.jpg" />
+    <None Remove="WhatsApp Image 2023-11-18 at 11.36.49_1aba20ee.jpg" />
+    <None Remove="WhatsApp Image 2023-11-18 at 11.36.49_5116ae1f.jpg" />
+    <None Remove="WhatsApp Image 2023-11-18 at 12.06.20_987a6c58.jpg" />
+    <None Remove="WhatsApp_Image_2023-11-18_at_11.36.49_1aba20ee-removebg-preview.png" />
+    <None Remove="WhatsApp_Image_2023-11-18_at_11.36.49_5116ae1f-removebg-preview.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="fo-dicom" Version="5.1.1" />
+    <PackageReference Include="fo-dicom.Desktop" Version="4.0.8" />
+    <PackageReference Include="fo-dicom.ImageSharp" Version="4.0.8" />
+    <PackageReference Include="fo-dicom.NetCore" Version="4.0.8" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="MySql.Data" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="126-1269385_chatbots-builder-pricing-crozdesk-chat-bot-png-transparent.png" />
+    <Resource Include="2055824.png" />
+    <Resource Include="225482.png" />
+    <Resource Include="5878299.png" />
+    <Resource Include="a-removebg-preview.png" />
+    <Resource Include="add.png" />
+    <Resource Include="back.png" />
+    <Resource Include="d1.png" />
+    <Resource Include="dd.png" />
+    <Resource Include="Doctor icon medical consultation male physician vector image on VectorStock.jpeg" />
+    <Resource Include="doctor.jpg" />
+    <Resource Include="Image1.png" />
+    <Resource Include="kisspng-physician-hospital-dr-mary-c-kirk-md-doctor-of-the-doctor-5ac2fc7f8a1db3.7569835315227280635657.jpg" />
+    <Resource Include="m-removebg-preview.png" />
+    <Resource Include="MicrosoftTeams-image (1).png" />
+    <Resource Include="MicrosoftTeams-image (11).png" />
+    <Resource Include="MicrosoftTeams-image (12).png" />
+    <Resource Include="MicrosoftTeams-image (14).png" />
+    <Resource Include="MicrosoftTeams-image (15).png" />
+    <Resource Include="MicrosoftTeams-image (16).png" />
+    <Resource Include="MicrosoftTeams-image (17).png" />
+    <Resource Include="MicrosoftTeams-image (18).png" />
+    <Resource Include="MicrosoftTeams-image (19).png" />
+    <Resource Include="MicrosoftTeams-image (2).png" />
+    <Resource Include="MicrosoftTeams-image (21).png" />
+    <Resource Include="MicrosoftTeams-image (22).png" />
+    <Resource Include="MicrosoftTeams-image (23).png" />
+    <Resource Include="MicrosoftTeams-image (24).png" />
+    <Resource Include="MicrosoftTeams-image (3).png" />
+    <Resource Include="MicrosoftTeams-image (4).png" />
+    <Resource Include="MicrosoftTeams-image (5).png" />
+    <Resource Include="MicrosoftTeams-image (6).png" />
+    <Resource Include="MicrosoftTeams-image (7).png" />
+    <Resource Include="MicrosoftTeams-image (8).png" />
+    <Resource Include="MicrosoftTeams-image (9).png" />
+    <Resource Include="MicrosoftTeams-image.png" />
+    <Resource Include="New Project 368 [22E05E0].png" />
+    <Resource Include="o-removebg-preview (1).png" />
+    <Resource Include="o-removebg-preview (2).png" />
+    <Resource Include="o-removebg-preview.png" />
+    <Resource Include="OIG.jpeg" />
+    <Resource Include="p-removebg-preview.png" />
+    <Resource Include="password.png" />
+    <Resource Include="r-removebg-preview.png" />
+    <Resource Include="r.jpg" />
+    <Resource Include="signs-icon-warning-icon-security-icon-set-icon-error-icon-text-triangle-line-symbol-signage-logo-png-clipart.jpg" />
+    <Resource Include="submit-successfully.png" />
+    <Resource Include="WhatsApp Image 2023-11-10 at 01.01.49_90f173e9.jpg" />
+    <Resource Include="WhatsApp Image 2023-11-10 at 09.14.19_0cc5122c.jpg" />
+    <Resource Include="WhatsApp Image 2023-11-18 at 11.36.49_1aba20ee.jpg" />
+    <Resource Include="WhatsApp Image 2023-11-18 at 11.36.49_5116ae1f.jpg" />
+    <Resource Include="WhatsApp Image 2023-11-18 at 12.06.20_987a6c58.jpg" />
+    <Resource Include="WhatsApp_Image_2023-11-18_at_11.36.49_1aba20ee-removebg-preview.png" />
+    <Resource Include="WhatsApp_Image_2023-11-18_at_11.36.49_5116ae1f-removebg-preview.png" />
+  </ItemGroup>
+
+</Project>

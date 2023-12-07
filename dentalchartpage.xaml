@@ -1,0 +1,100 @@
+﻿<Page x:Class="clinical_project.dentalchartpage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:clinical_project"
+      mc:Ignorable="d"
+      Title="Dentist Application" Height="450" Width="600">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Doctor's Name:" FontSize="15" FontFamily="Segoe UI Semibold"/>
+        <TextBox Grid.Row="0" Margin="120,0,0,0" Name="txtDoctorName"/>
+
+        <Label Grid.Row="1" Content="Patient's Name:" FontSize="15" FontFamily="Segoe UI Semibold"/>
+        <TextBox Grid.Row="1" Margin="120,0,0,0" Name="txtPatientName"/>
+
+        <Label Grid.Row="2" Content="Date:" FontFamily="Segoe UI Semibold" FontSize="15"/>
+        <DatePicker Grid.Row="2" Margin="120,0,0,0" Name="datePicker"/>
+
+        <Label Grid.Row="3" Content="Patient ID:" FontSize="15" FontFamily="Segoe UI Semibold"/>
+        <TextBox Grid.Row="3" Margin="120,0,0,0" Name="txtPatientID"/>
+
+        <Label Grid.Row="4" Content="Symptoms:" FontSize="15" FontFamily="Segoe UI Semibold"/>
+        <TextBox Grid.Row="4" Margin="120,0,0,0" Name="txtSymptoms" TextWrapping="Wrap" AcceptsReturn="True"/>
+
+        <Label Grid.Row="5" Content="Diagnosis:" FontSize="15" FontFamily="Segoe UI Semibold"/>
+        <ComboBox Grid.Row="5" Margin="120,0,0,0" Name="cmbDiagnosis">
+            <ComboBoxItem Content="Diagnosis"/>
+            <ComboBoxItem Content="Scaling"/>
+            <ComboBoxItem Content="Polishing"/>
+            <ComboBoxItem Content="Filling Simple"/>
+
+            <ComboBoxItem Content="Filling complicated"/>
+            <ComboBoxItem Content="RCT"/>
+            <ComboBoxItem Content="RCT Molar"/>
+            <ComboBoxItem Content="Pedo filling"/>
+
+            <ComboBoxItem Content="Pulpotmy"/>
+            <ComboBoxItem Content="PFM Crown"/>
+            <ComboBoxItem Content="Zircon crown 3"/>
+            <ComboBoxItem Content="Zircon crown 2"/>
+
+            <ComboBoxItem Content="Zircon crown 1"/>
+            <ComboBoxItem Content="E-max crown 3"/>
+            <ComboBoxItem Content="E-max crown 2"/>
+            <ComboBoxItem Content="E-max crown 1"/>
+
+            <ComboBoxItem Content="st.st.pedo crown"/>
+            <ComboBoxItem Content="zr pedo crown"/>
+            <ComboBoxItem Content="office bleaching"/>
+            <ComboBoxItem Content="Night guard"/>
+
+            <ComboBoxItem Content="Post and Core"/>
+            <ComboBoxItem Content="Extraction Simple"/>
+            <ComboBoxItem Content="Extraction complicated"/>
+            <ComboBoxItem Content="Surgical extraction"/>
+
+            <ComboBoxItem Content="Impaction"/>
+            <ComboBoxItem Content="Composite Veneer"/>
+            <ComboBoxItem Content="Venners 1"/>
+            <ComboBoxItem Content="Venners 2"/>
+
+            <ComboBoxItem Content="Implant Egyptian"/>
+            <ComboBoxItem Content="Implant Korean"/>
+            <ComboBoxItem Content="Implant German"/>
+            <ComboBoxItem Content="Implant American"/>
+
+            <ComboBoxItem Content="Laser Bleaching"/>
+            <ComboBoxItem Content="Depegmintation"/>
+            <ComboBoxItem Content="Soft Tissue Removal By Laser"/>
+            <ComboBoxItem Content="Pain Therapy with Laser"/>
+            <ComboBoxItem Content="Gingevctomy"/>
+        </ComboBox>
+
+        <Label Grid.Row="6" Content="Treatment Plan:" FontSize="15" FontFamily="Segoe UI Semibold" Margin="0,24,0,-24" Grid.RowSpan="4"/>
+        <TextBox Grid.Row="6" Margin="120,0,0,-64" Name="txtTreatmentPlan" TextWrapping="Wrap" AcceptsReturn="True" Grid.RowSpan="4"/>
+
+
+        <Button Grid.Row="9" Width="80" Height="30" Content="Save" Click="Save_Click" HorizontalAlignment="Left" Margin="510,200,0,-230" Background="#FF5D7599" FontSize="15" Foreground="White">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Grid.Row="9" Content="Notes:" FontSize="15" FontFamily="Segoe UI Semibold" Margin="0,89,0,-119"/>
+        <TextBox Grid.Row="9" Margin="120,89,0,-183" x:Name="txtTreatmentPlan_Copy" TextWrapping="Wrap" AcceptsReturn="True"/>
+    </Grid>
+</Page>

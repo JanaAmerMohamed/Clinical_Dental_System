@@ -1,0 +1,248 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:clinical_project"
+      xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" x:Class="clinical_project.patientview"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="1800"
+      Title="patientview">
+
+
+    <Grid Margin="0,10,0,0" HorizontalAlignment="Center" Width="1780" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="56*"/>
+            <RowDefinition Height="89*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Dashboard" HorizontalAlignment="Left" Margin="773,10,0,0" VerticalAlignment="Top" Height="39" Width="99" Background="#FF5D7599" Foreground="White" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="AddParticipation" HorizontalAlignment="Left" Margin="892,10,0,0" VerticalAlignment="Top" Width="132" Height="39" FontFamily="Segoe UI Semibold" Foreground="White" Background="#FF5D7599">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="PrintReport" HorizontalAlignment="Left" Margin="1040,10,0,0" VerticalAlignment="Top" Height="39" Width="99" Background="#FF5D7599" Foreground="White" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Order" HorizontalAlignment="Left" Margin="1159,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.394,-0.78" Height="39" Width="100" Background="#FF5D7599" Foreground="White" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Notification" HorizontalAlignment="Left" Margin="1277,10,0,0" VerticalAlignment="Top" Height="39" Width="99" Background="#FF5D7599" Foreground="White" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Billing" HorizontalAlignment="Left" Margin="1396,10,0,0" VerticalAlignment="Top" Height="39" RenderTransformOrigin="-0.454,0.698" Width="100" Background="#FF5D7599" Foreground="White" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="AddContract" HorizontalAlignment="Left" Margin="1514,10,0,0" VerticalAlignment="Top" Width="99" Height="39" RenderTransformOrigin="1.469,0.652" Background="#FF5D7599" Foreground="White" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Age" HorizontalAlignment="Left" Margin="1282,81,0,0" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.48,0.656" Foreground="White" FontFamily="Segoe UI Semibold" Grid.Row="1"/>
+        <Label Content="Cancellation" HorizontalAlignment="Left" Margin="1282,301,0,0" VerticalAlignment="Top" Width="88" Foreground="White" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.518,0.263" Grid.Row="1"/>
+        <DataGrid x:Name="BalanceGrid" Margin="718,71,0,106" HorizontalAlignment="Left" Width="422" HorizontalGridLinesBrush="Black" AutomationProperties.IsRowHeader="True">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridRowHeader}">
+                    <Setter Property="Background" Value="#FF5D7599"/>
+                    <Setter Property="FontWeight" Value="SemiBold"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+                </Style>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="#ABB6C8"/>
+                    <Setter Property="FontWeight" Value="SemiBold"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="        Balance" Binding="{Binding balance}" Width="100"/>
+                <DataGridTextColumn Header="        Total" Binding="{Binding total}" Width="100"/>
+                <DataGridTextColumn Header="        Unbilled" Binding="{Binding billing}" Width="100"/>
+                <DataGridTextColumn Header="        Past Due" Binding="{Binding past}" Width="*"/>
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="433,350,1108,39" Background="#FF243C58" Grid.Row="1"/>
+        <ListView x:Name="lvEntries" Margin="0,0,1546,0" Height="885" VerticalAlignment="Top" d:ItemsSource="{d:SampleData ItemCount=100}" Grid.RowSpan="2" SelectionChanged="lvEntries_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <DataGrid x:Name="RedFlagesGrid" Margin="1316,71,0,106" HorizontalAlignment="Left" Width="435" HorizontalGridLinesBrush="#FFBA2525">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="#ABB6C8"/>
+                    <Setter Property="FontWeight" Value="SemiBold"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="        REd Flags" Binding="{Binding redflags}" Width="100"/>
+                <DataGridTextColumn Header="    Year To Date" Binding="{Binding year}" Width="100"/>
+                <DataGridTextColumn Header="        Life Time" Binding="{Binding life_time}" Width="*"/>
+
+            </DataGrid.Columns>
+
+
+
+
+
+
+        </DataGrid>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="239,0,1378,0" Background="#FF243C58" Grid.RowSpan="2">
+            <Button Content="file Labs" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40" Width="142" Margin="0,159,0,0" FontFamily="Segoe UI Semibold" Background="#FF5D7599" FontSize="20" Foreground="White">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </Border>
+        <Button Content="File Old Paper" HorizontalAlignment="Left" Margin="252,294,0,0" VerticalAlignment="Top" Height="40" Width="137" FontFamily="Segoe UI Semibold" FontSize="20" Foreground="White" Background="#FF5D7599">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="890" VerticalAlignment="Top" Width="292" Background="#FF243C58" Grid.RowSpan="2" Margin="407,0,0,0">
+            <Label Content="Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Foreground="White" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.937,0.687" Margin="15,392,0,0" FontSize="20"/>
+        </Border>
+        <TextBlock HorizontalAlignment="Left" Height="56" Margin="433,212,0,0" TextWrapping="Wrap" Text="Hi,Patient" VerticalAlignment="Top" Width="240" Foreground="#FFF1E7E7" TextAlignment="Center" FontWeight="Bold" FontSize="24"/>
+        <Image HorizontalAlignment="Left" Height="192" VerticalAlignment="Top" Width="188" Source="/5878299.png" Margin="459,10,0,0"/>
+        <Button Content="General File" HorizontalAlignment="Left" Margin="252,130,0,0" VerticalAlignment="Top" Height="40" Width="137" FontFamily="Segoe UI Semibold" Grid.Row="1" FontSize="20" Foreground="White" Background="#FF5D7599">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Border BorderBrush="Black" BorderThickness="1"/>
+        <Label Content="ID:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Foreground="White" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.937,0.687" Margin="433,150,0,0" Grid.Row="1" FontSize="20"/>
+        <Label Content="Status:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Foreground="White" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.937,0.687" Margin="433,246,0,0" Grid.Row="1" FontSize="20"/>
+        <Label Content="Canceletion:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Foreground="White" FontFamily="Segoe UI Semibold" RenderTransformOrigin="0.937,0.687" Margin="433,350,0,0" Grid.Row="1" FontSize="20"/>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" RenderTransformOrigin="2.0,4.632" Margin="718,273,738,10" Grid.Row="1">
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="FontSize" Value="25" />
+                    <Setter Property="Margin" Value="5,5,20,0"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name of prescribition" Binding="{Binding Id}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="FontSize" Value="16"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Segoe UI Semibold"/>
+                            <Setter Property="FontSize" Value="25"/>
+                            <Setter Property="Width" Value="320"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <!-- New DataGridTextColumn for "Package Number" -->
+
+
+                <!-- New DataGridTextColumn for "Items Number" -->
+
+
+                <!-- New DataGridTextColumn for "Minimum" -->
+
+
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+
+        <Border Width="1000" VerticalAlignment="Top" Grid.RowSpan="2" Margin="731,260,0,0" Height="329" HorizontalAlignment="Left" BorderThickness="1" BorderBrush="Black" Background="#FF243C58"/>
+        <Wpf:CartesianChart x:Name="liveChart" Zoom="X" Margin="773,304,75,339" Grid.RowSpan="2">
+            <Wpf:CartesianChart.Series>
+                <Wpf:LineSeries Title="Live Data" Values="{Binding ChartValues}" LineSmoothness="0.5" PointGeometry="{x:Null}" Stroke="DodgerBlue"/>
+            </Wpf:CartesianChart.Series>
+
+            <!-- Define X-axis -->
+            <Wpf:CartesianChart.AxisX>
+                <Wpf:Axis Title="Review" Labels="1, 2, 3, 4, 5"/>
+            </Wpf:CartesianChart.AxisX>
+
+            <!-- Define Y-axis -->
+            <Wpf:CartesianChart.AxisY>
+                <Wpf:Axis Title="Number of Patients" MinValue="0" MaxValue="500" LabelFormatter="{Binding YFormatter}" />
+            </Wpf:CartesianChart.AxisY>
+        </Wpf:CartesianChart>
+        <DataGrid x:Name="dataGrid_Copy" AutoGenerateColumns="False" RenderTransformOrigin="2.0,4.632" Margin="1098,273,10,0" Grid.Row="1">
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="FontSize" Value="25" />
+                    <Setter Property="Margin" Value="5,5,20,0"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Doctor Comments" Binding="{Binding Id}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="FontSize" Value="16"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Segoe UI Semibold"/>
+                            <Setter Property="FontSize" Value="25"/>
+                            <Setter Property="Width" Value="900"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <!-- New DataGridTextColumn for "Package Number" -->
+
+
+                <!-- New DataGridTextColumn for "Items Number" -->
+
+
+                <!-- New DataGridTextColumn for "Minimum" -->
+
+
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="" HorizontalAlignment="Left" Height="39" Margin="432,10,0,0" VerticalAlignment="Top" Width="66" FontFamily="Segoe UI Semibold" FontSize="25" BorderBrush="#FF5D7599" Background="#FF5D7599" Foreground="#FFFCFCFC" RenderTransformOrigin="1.161,0.749">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="40" Margin="432,9,0,0" VerticalAlignment="Top" Width="55" Source="/225482.png" RenderTransformOrigin="0.235,0.236">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.8"/>
+                    <TranslateTransform X="29.114" Y="21.174"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+
+
+    </Grid>
+</Page>

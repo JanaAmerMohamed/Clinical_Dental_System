@@ -1,0 +1,97 @@
+﻿<Page x:Class="clinical_project.ss"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:clinical_project"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1">
+
+    <Grid Height="900" Margin="0,0,-423,-450" Background="White">
+        <Grid Width="1200" Margin="10,10,12,-10" Height="900">
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="911" VerticalAlignment="Top" Width="373" Background="#FF243C58" RenderTransformOrigin="0.5,0.5" Margin="-10,-15,0,0">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-0.094"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-1.332"/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+                <Image HorizontalAlignment="Center" Height="192" VerticalAlignment="Top" Width="189" Source="/5878299.png" Margin="0,47,0,0"/>
+            </Border>
+            <Label Content="Hi, Manager" HorizontalAlignment="Left" Height="58" Margin="57,216,0,0" VerticalAlignment="Top" Width="292" FontSize="35" FontFamily="Segoe UI Semibold" Foreground="White"/>
+            <Border BorderBrush="#FFFDFAFA" BorderThickness="1" HorizontalAlignment="Left" Height="6" Margin="35,287,0,0" VerticalAlignment="Top" Width="286"/>
+            <Button Content="ADD" HorizontalAlignment="Left" Height="83" Margin="48,345,0,0" VerticalAlignment="Top" Width="260" FontFamily="Segoe UI Semibold" FontSize="25" BorderBrush="#FF5D7599" Background="#FF5D7599" Foreground="#FFFCFCFC">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Content="DELETE" HorizontalAlignment="Left" Height="79" Margin="48,487,0,0" VerticalAlignment="Top" Width="260" FontFamily="Segoe UI Semibold" FontSize="25" BorderBrush="#FF5D7599" Background="#FF5D7599" Foreground="#FFFCFCFC">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Content="EDIT" HorizontalAlignment="Left" Height="78" Margin="48,620,0,0" VerticalAlignment="Top" Width="260" FontFamily="Segoe UI Semibold" FontSize="25" BorderBrush="#FF5D7599" Background="#FF5D7599" Foreground="#FFFCFCFC">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Content="SEARCH" HorizontalAlignment="Left" Height="78" Margin="48,752,0,0" VerticalAlignment="Top" Width="260" FontFamily="Segoe UI Semibold" FontSize="25" BorderBrush="#FF5D7599" Background="#FF5D7599" Foreground="#FFFCFCFC">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Image HorizontalAlignment="Left" Height="60" Margin="66,356,0,0" VerticalAlignment="Top" Width="83" Source="/MicrosoftTeams-image (2).png"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="57,628,0,0" VerticalAlignment="Top" Width="70" Source="/MicrosoftTeams-image (4).png"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="61,762,0,0" VerticalAlignment="Top" Width="80" Source="/MicrosoftTeams-image (5).png"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="62,497,0,0" VerticalAlignment="Top" Width="80" Source="/MicrosoftTeams-image (6).png"/>
+            <TextBox HorizontalAlignment="Left" Height="42" Margin="375,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" TextChanged="TextBox_TextChanged"/>
+            <Label Content="First Name:" HorizontalAlignment="Left" Height="54" Margin="375,30,0,0" VerticalAlignment="Top" Width="195" FontSize="30" FontWeight="Bold" FontFamily="Segoe UI Semibold"/>
+            <TextBox HorizontalAlignment="Left" Height="42" Margin="832,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="333"/>
+            <Label Content="Last Name:" HorizontalAlignment="Left" Height="51" Margin="832,30,0,0" VerticalAlignment="Top" Width="175" FontSize="30" FontWeight="Bold" FontFamily="Segoe UI Semibold"/>
+            <Label Content="Email:" HorizontalAlignment="Left" Height="45" Margin="375,200,0,0" VerticalAlignment="Top" Width="159" FontSize="30" FontWeight="Bold" FontFamily="Segoe UI Semibold"/>
+            <TextBox HorizontalAlignment="Left" Height="42" Margin="375,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" TextChanged="TextBox_TextChanged"/>
+            <TextBox HorizontalAlignment="Left" Height="37" Margin="386,413,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+            <Label Content="Birthday:" HorizontalAlignment="Left" Height="61" Margin="832,352,0,0" VerticalAlignment="Top" Width="181" FontSize="30" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Label Content="Gender:" HorizontalAlignment="Left" Height="44" Margin="832,208,0,0" VerticalAlignment="Top" Width="152" FontSize="30" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Label Content="PhoneNumber:" HorizontalAlignment="Left" Height="54" Margin="375,651,0,0" VerticalAlignment="Top" Width="231" FontSize="30" FontFamily="Segoe UI Semibold" FontWeight="Bold" RenderTransformOrigin="0.051,0.543"/>
+            <TextBox HorizontalAlignment="Left" Height="38" Margin="386,589,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302"/>
+            <Label Content="Password:" HorizontalAlignment="Left" Height="62" Margin="844,504,0,0" VerticalAlignment="Top" Width="150" FontSize="30" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="38" Margin="844,589,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="321"/>
+            <Label Content="National ID:" HorizontalAlignment="Left" Height="62" Margin="375,504,0,0" VerticalAlignment="Top" Width="194" FontSize="30" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="38" Margin="386,733,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296"/>
+            <TextBox HorizontalAlignment="Left" Height="38" Margin="844,733,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+            <Label Content="SSN:" HorizontalAlignment="Left" Height="44" Margin="844,661,0,0" VerticalAlignment="Top" Width="143" FontSize="30" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Button Content="Save" HorizontalAlignment="Left" Height="46" Margin="651,818,0,0" VerticalAlignment="Top" Width="196" FontSize="30" FontWeight="Bold" FontFamily="Segoe UI Semibold" Background="#FF5D7599" Foreground="#FFFEFEFE">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Label Content="Session_Price:" HorizontalAlignment="Left" Height="44" Margin="375,352,0,0" VerticalAlignment="Top" Width="196" FontSize="30" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+
+
+        </Grid>
+        <Button Content="" HorizontalAlignment="Left" Height="26" Margin="26,24,0,0" VerticalAlignment="Top" Width="66" FontFamily="Segoe UI Semibold" FontSize="25" BorderBrush="#FF5D7599" Background="#FF5D7599" Foreground="#FFFCFCFC" RenderTransformOrigin="1.161,0.749">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="40" Margin="30,18,0,0" VerticalAlignment="Top" Width="56" Source="/225482.png" RenderTransformOrigin="0.235,0.236">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.8"/>
+                    <TranslateTransform X="29.114" Y="21.174"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <DatePicker x:Name="dpDateOfBirth" HorizontalAlignment="Left" Height="38" Margin="860,422,0,0" VerticalAlignment="Top" Width="200" FontSize="18" FontFamily="Segoe UI Semibold"/>
+        <ComboBox x:Name="cmbGender" HorizontalAlignment="Left" Height="38" Margin="860,285,0,0" VerticalAlignment="Top" Width="200" FontSize="18" FontFamily="Segoe UI Semibold">
+            <ComboBoxItem Content="Male"/>
+            <ComboBoxItem Content="Female"/>
+        </ComboBox>
+    </Grid>
+</Page>

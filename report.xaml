@@ -1,0 +1,191 @@
+﻿<Page x:Class="clinical_project.report"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:clinical_project"
+      mc:Ignorable="d"
+      Title="report" Height="633" Width="745">
+
+    <Grid Background="White" Margin="0,0,-568,-250">
+        <ComboBox HorizontalAlignment="Left" Margin="373,60,0,0" VerticalAlignment="Top" Width="112" SelectedIndex="0" Height="16" RenderTransformOrigin="0.5,0.5">
+            <ComboBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.055"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ComboBox.RenderTransform>
+            <CheckBox IsChecked="True" IsThreeState="True"/>
+        </ComboBox>
+        <Label Content="From:" HorizontalAlignment="Left" Margin="370,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.487,-0.076" FontSize="14" FontFamily="Segoe UI Semibold"/>
+        <Label Content="To:" HorizontalAlignment="Left" Height="29" Margin="528,24,0,0" VerticalAlignment="Top" Width="32" FontSize="14" RenderTransformOrigin="1.141,0.759" FontFamily="Segoe UI Semibold"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="42,768,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" FontSize="14" Foreground="#FFFBF4F4" Background="#FF5D7599" Width="104" Height="39">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Close" HorizontalAlignment="Left" Margin="478,805,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" Foreground="#FFFBF4F4" Background="#FF5D7599" FontSize="15" Width="163" Height="40">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Delete All Logs" HorizontalAlignment="Left" Margin="730,804,0,0" VerticalAlignment="Top" Background="#FF5D7599" FontFamily="Segoe UI Semibold" Foreground="#FFFBF4F4" FontSize="15" Width="178" Height="40" RenderTransformOrigin="1.046,9.196">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,1035,0" Background="#FF243C58"/>
+
+        <ComboBox HorizontalAlignment="Left" Margin="528,56,0,0" VerticalAlignment="Top" Width="113" Height="20" RenderTransformOrigin="0.644,2.127"/>
+        <Button Content="view" HorizontalAlignment="Left" Margin="687,56,0,0" VerticalAlignment="Top" Width="101" Background="#FF5D7599" Foreground="#FFFCF7F7" FontFamily="Segoe UI Semibold" FontSize="15" Height="24">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Export Excel" HorizontalAlignment="Left" Margin="989,805,0,0" VerticalAlignment="Top" Width="205" Background="#FF5D7599" Foreground="#FFFCF7F7" FontFamily="Segoe UI Semibold" FontSize="15" Height="40">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="User ID:" HorizontalAlignment="Left" Margin="839,24,0,0" VerticalAlignment="Top" Width="79" FontSize="20" FontFamily="Segoe UI Semibold"/>
+        <ComboBox HorizontalAlignment="Left" Margin="839,64,0,0" VerticalAlignment="Top" Width="210" Height="16"/>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" RenderTransformOrigin="2.0,4.632" Margin="362,108,63,108">
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="FontSize" Value="10" />
+                    <!-- Set the desired margin to add space between header and data -->
+
+
+
+
+
+
+
+                    <!-- Set the desired font size for headers -->
+                    <Setter Property="Margin" Value="2,2,15,0"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header=" User ID " Binding="{Binding Id}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="FontSize" Value="12"/>
+                            <!-- Set the desired font size for data -->
+
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Segoe UI Semibold"/>
+                            <!-- Set the desired width for the header "ID" -->
+                            <!-- Set the desired font family for the header -->
+                            <Setter Property="FontSize" Value="25"/>
+                            <Setter Property="Width" Value="250"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="        Date  " Binding="{Binding Name}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="FontSize" Value="16"/>
+
+                            <!-- Set the desired font size for data -->
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Segoe UI Semibold"/>
+                            <!-- Set the desired font size for the header -->
+                            <!-- Set the desired font family for the header -->
+                            <Setter Property="FontSize" Value="25"/>
+                            <Setter Property="Width" Value="320"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="  Service " Binding="{Binding Name}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="FontSize" Value="12"/>
+
+                            <!-- Set the desired font size for data -->
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Segoe UI Semibold"/>
+                            <!-- Set the desired font size for the header -->
+                            <!-- Set the desired font family for the header -->
+                            <Setter Property="FontSize" Value="25"/>
+                            <Setter Property="Width" Value="320"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Image HorizontalAlignment="Left" Height="131" VerticalAlignment="Top" Width="154" Source="/5878299.png" Margin="74,10,0,0"/>
+        <Button Content="Help &amp; Support" HorizontalAlignment="Left" Margin="24,433,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.039,1.495" Width="230" Height="55" Foreground="#FFF4EBEB" FontFamily="Segoe UI Semibold" Background="#FF5D7599" FontSize="15">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Home" HorizontalAlignment="Left" Margin="24,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.082,3.018" Height="55" Width="232" FontFamily="Segoe UI Semibold" Foreground="#FFF0E4E4" Background="#FF5D7599" FontSize="15">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="User Profile" HorizontalAlignment="Left" Margin="24,344,0,0" VerticalAlignment="Top" Height="55" Width="230" Foreground="#FFF0E4E4" FontFamily="Segoe UI Semibold" Background="#FF5D7599" FontSize="15">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="  Doctor Schedule" HorizontalAlignment="Left" Height="55" Margin="24,263,0,0" VerticalAlignment="Top" Width="230" Foreground="#FFF3EBEB" FontFamily="Segoe UI Semibold" Background="#FF5D7599" FontSize="15" Click="Button_Click_3">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="42" Margin="48,168,0,0" VerticalAlignment="Top" Width="64" Source="/MicrosoftTeams-image (15).png" RenderTransformOrigin="0.45,0.933"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="47,265,0,0" VerticalAlignment="Top" Width="61" Source="/MicrosoftTeams-image (19).png" RenderTransformOrigin="0.45,0.933"/>
+        <Image HorizontalAlignment="Left" Height="61" Margin="40,433,0,0" VerticalAlignment="Top" Width="50" Source="/MicrosoftTeams-image (22).png" RenderTransformOrigin="0.45,0.933"/>
+        <Image HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="60" Source="/5878299.png" Margin="32,339,0,0"/>
+        <Button Content="       Discounts &amp; Vouchers" HorizontalAlignment="Left" Margin="24,526,0,0" VerticalAlignment="Top" Width="230" Height="55" Background="#FF5D7599" Foreground="#FFF1ECEC" FontFamily="Segoe UI Semibold" FontSize="15">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="IVR Booking" HorizontalAlignment="Left" Margin="24,616,0,0" VerticalAlignment="Top" Width="232" Height="55" Foreground="#FFF4EBEB" FontFamily="Segoe UI Semibold" Background="#FF5D7599" FontSize="15">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Sign Out" HorizontalAlignment="Left" Margin="24,797,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.022,0.606" Width="230" Height="55" Foreground="#FFFCF8F8" FontFamily="Segoe UI Semibold" Background="#FF5D7599" FontSize="15">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Tools &amp; Materials" HorizontalAlignment="Left" Margin="24,706,0,0" VerticalAlignment="Top" Width="232" Height="55" Foreground="#FFF3EBEB" FontFamily="Segoe UI Semibold" Background="#FF5D7599" FontSize="15">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="40" Margin="38,805,0,0" VerticalAlignment="Top" Width="56" Source="/225482.png" RenderTransformOrigin="0.235,0.236">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.8"/>
+                    <TranslateTransform X="29.114" Y="21.174"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="74" Margin="29,524,0,0" VerticalAlignment="Top" Width="50" Source="/MicrosoftTeams-image (21).png" RenderTransformOrigin="0.45,0.933"/>
+        <Image HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="50" Source="/MicrosoftTeams-image (24).png" Margin="32,714,0,0" RenderTransformOrigin="-4.767,0.949"/>
+
+
+    </Grid>
+</Page>

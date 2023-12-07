@@ -1,0 +1,58 @@
+﻿<Page x:Class="clinical_project.chatbot"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      
+        Title="ChatBot" Height="900" Width="1200">
+    <Grid Background="#FFF3F3F3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0" Margin="0,10,0,0">
+            <StackPanel Name="ChatPanel">
+                <Border BorderBrush="White" BorderThickness="1" Height="180" Width="203" HorizontalAlignment="Left">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/MicrosoftTeams-image (9).png"/>
+                    </Border.Background>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Grid Margin="0,757,0,0" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="MessageInput" Grid.Column="0" Margin="84,45,314,0" />
+            <Button Content="Send" Margin="915,94,148,5" Click="SendMessage_Click" FontSize="25" FontFamily="Segoe UI Semibold" Foreground="White" Background="#FF5D7599" >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Content="Back" Margin="1076,94,10,5" Click="Back_Click" Background="#FF5D7599" Foreground="White" FontSize="25" FontFamily="Segoe UI Semibold" >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </Grid>
+        <Label Content="Default ChatBot" HorizontalAlignment="Center" Height="62" Margin="0,62,0,0" VerticalAlignment="Top" Width="340" FontSize="40" FontFamily="Segoe UI Semibold"/>
+        <Button Content="" HorizontalAlignment="Left" Height="36" Margin="1113,10,0,0" VerticalAlignment="Top" Width="66" FontFamily="Segoe UI Semibold" FontSize="25" BorderBrush="#FF5D7599" Background="#FF5D7599" Foreground="#FFFCFCFC" RenderTransformOrigin="1.161,0.749">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="40" Margin="1117,11,0,0" VerticalAlignment="Top" Width="55" Source="/225482.png" RenderTransformOrigin="0.235,0.236">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.8"/>
+                    <TranslateTransform X="29.114" Y="21.174"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</Page>

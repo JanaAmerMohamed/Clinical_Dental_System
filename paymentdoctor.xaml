@@ -1,0 +1,231 @@
+﻿<Page x:Class="clinical_project.paymentdoctor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:clinical_project"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="paymentdoctor">
+
+    <Grid Background="White" Margin="0,0,-1008,-688">
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" RenderTransformOrigin="2.0,4.632" Margin="312,10,10,10">
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="FontSize" Value="25" />
+                    <!-- Set the desired margin to add space between header and data -->
+
+
+
+
+
+
+
+                    <!-- Set the desired font size for headers -->
+                    <Setter Property="Margin" Value="5,5,20,0"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="   Doctor Name  " Binding="{Binding Id}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="FontSize" Value="16"/>
+                            <!-- Set the desired font size for data -->
+
+
+
+
+
+
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Segoe UI Semibold"/>
+                            <!-- Set the desired width for the header "ID" -->
+
+
+
+
+
+                            <!-- Set the desired font family for the header -->
+                            <Setter Property="FontSize" Value="25"/>
+                            <Setter Property="Width" Value="280"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="        Speciality        " Binding="{Binding Name}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="FontSize" Value="16"/>
+
+                            <!-- Set the desired font size for data -->
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Segoe UI Semibold"/>
+                            <!-- Set the desired font size for the header -->
+                            <!-- Set the desired font family for the header -->
+                            <Setter Property="FontSize" Value="25"/>
+                            <Setter Property="Width" Value="320"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="   Beneficiaries  " Binding="{Binding Id}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="FontSize" Value="16"/>
+                            <!-- Set the desired font size for data -->
+
+
+
+
+
+
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Segoe UI Semibold"/>
+                            <!-- Set the desired width for the header "ID" -->
+
+
+
+
+
+                            <!-- Set the desired font family for the header -->
+                            <Setter Property="FontSize" Value="25"/>
+                            <Setter Property="Width" Value="280"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="   Cost per patient  " Binding="{Binding Name}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="FontSize" Value="16"/>
+
+                            <!-- Set the desired font size for data -->
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Segoe UI Semibold"/>
+                            <!-- Set the desired font size for the header -->
+                            <!-- Set the desired font family for the header -->
+                            <Setter Property="FontSize" Value="25"/>
+                            <Setter Property="Width" Value="320"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="        Total Amount        " Binding="{Binding Name}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="FontSize" Value="16"/>
+
+                            <!-- Set the desired font size for data -->
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Segoe UI Semibold"/>
+                            <!-- Set the desired font size for the header -->
+                            <!-- Set the desired font family for the header -->
+                            <Setter Property="FontSize" Value="25"/>
+                            <Setter Property="Width" Value="320"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+
+
+
+
+
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1269" VerticalAlignment="Top" Width="299" Background="#FF243C58" Margin="-6,0,0,0"/>
+        <Image HorizontalAlignment="Left" Height="142" VerticalAlignment="Top" Width="100" Source="/5878299.png" Margin="69,0,0,0"/>
+        <Button Content="Dashboard" HorizontalAlignment="Left" Height="43" Margin="34,167,0,0" VerticalAlignment="Top" Width="169" Background="#FF5D7599" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Chatbot " HorizontalAlignment="Left" Height="55" Margin="22,705,0,0" VerticalAlignment="Top" Width="230" Background="#FF5D7599" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Notifications " HorizontalAlignment="Left" Height="55" Margin="22,621,0,0" VerticalAlignment="Top" Width="230" Background="#FF5D7599" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Massages " HorizontalAlignment="Left" Height="55" Margin="22,0,0,0" VerticalAlignment="Center" Width="230" Background="#FF5D7599" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Calendar" HorizontalAlignment="Left" Height="55" Margin="22,452,0,0" VerticalAlignment="Top" Width="230" Background="#FF5D7599" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Analytics " HorizontalAlignment="Left" Height="55" Margin="22,374,0,0" VerticalAlignment="Top" Width="230" Background="#FF5D7599" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Order " HorizontalAlignment="Left" Height="55" Margin="27,311,0,0" VerticalAlignment="Top" Width="230" Background="#FF5D7599" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Patient " HorizontalAlignment="Left" Height="44" Margin="34,215,0,0" VerticalAlignment="Top" Width="169" Background="#FF5D7599" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Payments" HorizontalAlignment="Left" Height="55" Margin="22,788,0,0" VerticalAlignment="Top" Width="230" Background="#FF84ACE8" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="News" HorizontalAlignment="Left" Height="55" Margin="22,870,0,0" VerticalAlignment="Top" Width="230" Background="#FF5D7599" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Tools&amp;Material" HorizontalAlignment="Left" Height="55" Margin="22,952,0,0" VerticalAlignment="Top" Width="230" Background="#FF5D7599" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Sign out" HorizontalAlignment="Left" Height="50" Margin="60,1050,0,0" VerticalAlignment="Top" Width="166" Background="#FF5D7599" Foreground="#FFF8F5F5" FontSize="20" FontFamily="Segoe UI Semibold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="37" Margin="50,1055,0,0" VerticalAlignment="Top" Width="35" Source="/225482.png" RenderTransformOrigin="0.396,0.699">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.028" AngleX="0"/>
+                    <RotateTransform Angle="-179.786"/>
+                    <TranslateTransform X="15.957" Y="-3.848"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="43,125,0,0" TextWrapping="Wrap" Text="Hi, Doctor" VerticalAlignment="Top" Width="153" Foreground="#FFF1E7E7" TextAlignment="Center" FontWeight="Bold" FontSize="24"/>
+
+
+    </Grid>
+</Page>

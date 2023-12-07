@@ -1,0 +1,20 @@
+﻿clinical_project
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\clinical\dental clinic\clinical_project\clinical_project\obj\Debug\net6.0-windows\
+clinical_project
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+D:\clinical\dental clinic\clinical_project\clinical_project\App.xaml
+43-1833964278
+
+47-488707096
+225376772951
+addsource.xaml;alert.xaml;calender.xaml;chatbot.xaml;delete.xaml;deletemessage.xaml;dentalchartpage.xaml;Discountvoucher.xaml;doctormessage.xaml;Doctororder.xaml;Doctorschedual.xaml;doctorview.xaml;edit.xaml;editmessage.xaml;filepage.xaml;helpsupport.xaml;ivrbooking.xaml;MainWindow.xaml;news.xaml;ocr.xaml;ontology.xaml;Page2.xaml;Page3.xaml;Page4.xaml;Page5.xaml;Page6.xaml;Page7.xaml;patientview.xaml;payment.xaml;paymentdoctor.xaml;paymentreceptiona.xaml;reception.xaml;report.xaml;review.xaml;SecondPage.xaml;signmessage.xaml;ss.xaml;submitsignuppateint.xaml;submitsource.xaml;updaterecord.xaml;uploaddicom.xaml;upload_pdf.xaml;Window2.xaml;
+
+True
+
