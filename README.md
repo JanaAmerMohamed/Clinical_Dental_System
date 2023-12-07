@@ -56,5 +56,41 @@ to patients and clinic.
 • IVR (Interactive Voice Response) Appointment Booking Software
 • Medical Billing Software For Clinic
 
+# Each view description
+
+# Manager_view:
+
+<img width="412" alt="Screenshot 2023-12-07 021421" src="https://github.com/JanaAmerMohamed/Clinical_Dental_System/assets/102023114/75368b4c-2787-426b-985e-894dde5a3f1e">
+
+# Reception_View:
+
+<img width="497" alt="image" src="https://github.com/JanaAmerMohamed/Clinical_Dental_System/assets/102023114/8379371b-d9fb-43e1-afe9-85105eeaf7e5">
+
+   # OCR_Scan:
+   <img width="503" alt="image" src="https://github.com/JanaAmerMohamed/Clinical_Dental_System/assets/102023114/a8a7925b-e7e5-49d6-8e74-2bbf48fdafc1">
+
+
+# Doctor_view:
+
+<img width="506" alt="image" src="https://github.com/JanaAmerMohamed/Clinical_Dental_System/assets/102023114/970f7c2b-9fef-4eb2-92c4-dfb60b01dd08">
+
+   # Analysis Page:
+<img width="500" alt="image" src="https://github.com/JanaAmerMohamed/Clinical_Dental_System/assets/102023114/3ac5e851-6ff6-4f6d-856d-4e963b7d92c4">
+
+   # chatbot:
+ <img width="500" alt="image" src="https://github.com/JanaAmerMohamed/Clinical_Dental_System/assets/102023114/96625da6-340f-4e55-9347-682873b44ddc">
+
+   # help & support Page:
+ <img width="503" alt="image" src="https://github.com/JanaAmerMohamed/Clinical_Dental_System/assets/102023114/6e895c98-7bd3-44e8-ac12-0569b0c33317">
+
+
+Patient_view:
+
+<img width="504" alt="Screenshot 2023-12-07 021931" src="https://github.com/JanaAmerMohamed/Clinical_Dental_System/assets/102023114/eb0e8915-18a7-4b85-9385-28ac5293e293">
+
+
+
+
+
 <img width="893" alt="image" src="https://github.com/JanaAmerMohamed/Clinical_Dental_System/assets/102023114/ca57286c-8248-4ad6-a4d0-3029d157c18a">
 
