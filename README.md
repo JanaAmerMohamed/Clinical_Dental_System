@@ -89,7 +89,7 @@ Patient_view:
 <img width="504" alt="Screenshot 2023-12-07 021931" src="https://github.com/JanaAmerMohamed/Clinical_Dental_System/assets/102023114/eb0e8915-18a7-4b85-9385-28ac5293e293">
 
 
-
+# UML Diagram of the system :
 
 
 <img width="893" alt="image" src="https://github.com/JanaAmerMohamed/Clinical_Dental_System/assets/102023114/ca57286c-8248-4ad6-a4d0-3029d157c18a">
