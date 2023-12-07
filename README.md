@@ -56,4 +56,5 @@ to patients and clinic.
 • IVR (Interactive Voice Response) Appointment Booking Software
 • Medical Billing Software For Clinic
 
+<img width="893" alt="image" src="https://github.com/JanaAmerMohamed/Clinical_Dental_System/assets/102023114/ca57286c-8248-4ad6-a4d0-3029d157c18a">
 
